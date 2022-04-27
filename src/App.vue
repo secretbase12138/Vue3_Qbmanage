@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <router-view></router-view>
+  <div class="width1000">
     <el-row>
       <el-col :span="24">
         <div class="grid-content bg-purple-dark"/>
@@ -63,10 +64,14 @@
 </template>
 
 <script setup>
-
+  const width = '1000px'
 </script>
 
 <style lang="scss">
+  .width1000{
+    width: v-bind(width);
+  }
+
   .transition-box {
     margin-bottom: 10px;
     width: 200px;
